@@ -32,4 +32,11 @@ object Download {
     fileDownloader(liveURL, filename)
   }
 
+  def downloadAllFiles(): Unit = {
+    downloadTrainingFile()
+    downloadTestFile()
+    downloadLiveFile()
+    downloadValidationFile()
+  }
+
 }
